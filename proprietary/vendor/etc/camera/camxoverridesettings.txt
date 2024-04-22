@@ -1,24 +1,10 @@
 # K3S seting file
 multiCameraLogicalXMLFile=vili.xml
 
-#close camera log
-logInfoMask=0
-overrideLogLevels=0x1
-logWarningMask=0
-logConfigMask=0
-systemLogEnable=TRUE
-logCoreCfgMask=0
-enableAsciiLogging=0
-logRequestMapping=FALSE
-enableTxtLogging=0
-traceGroupsEnable=0
-enable3ADebugData=FALSE
-enableTuningMetadata=FALSE
-raiserecoverysigabrt=FALSE
-enableCameraCoreDumpBinary=FALSE
-enableCameraCoreDumpText=FALSE
-enablePerRequestSync=FALSE
-
+#LOG
+logInfoMask=0x10098
+logConfigMask=0x80
+#logVerboseMask=0x10098
 
 # SAT
 isZoomRatioSupported=TRUE
@@ -30,6 +16,8 @@ enablePostZoomFOV=1
 isPhyicalMultiCameraSupported=TRUE
 isSwitchAnimationSupported=TRUE
 
+raiserecoverysigabrt=TRUE
+overrideLogLevels=0x1F
 pdafHWEnable=TRUE
 bokehRelightVerion=2
 bokehVendorID=0
@@ -79,6 +67,9 @@ isVideoBeautyEISSupported=TRUE
 minReprocessInputWidth=0x1FFF
 minReprocessInputHeight=0x1FFF
 
+enableTxtLogging=1
+offlineLogNumber=20
+enablePerRequestSync=FALSE
 
 #Quickview Function
 enableCHIPartialData=1
